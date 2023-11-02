@@ -1,0 +1,20 @@
+Machine Learning  
+
+Machine learning: A sub field of AI that focuses on machines that take data related to specific tasks and learn from the data in order to build a model. This process enables the generation of an intelligent response to new data presented to the system through the use of algorithms and statistical models that identify patterns and make inferences. [Foundation of AI]Supervised machine learning: models are trained with labeled data sets, which allow the models to learn and grow more accurate over time. Supervised machine learning is the most common type used today. 
+
+Unsupervised machine learning: a program looks for patterns in unlabeled data. Unsupervised machine learning can find patterns or trends that people aren’t explicitly looking for.  
+Linear regression  
+
+It is a supervised machine learning model used to do analysis in which the predictor or independent variables are assumed to be related to the criterion or dependent variable in such a manner that increases in an x variable result in consistent increases in the y variable. In other words, the direction and rate of change of one variable is constant with respect to changes in the other variable. The analysis yields a regression equation that includes an intercept and regression coefficients for the predictors. 
+
+General formula:  
+
+y = β₀ + β₁X + ɛ   
+
+y is the dependent variable. 
+
+X is the independent variable  
+
+β₀ is the constant and, 
+
+ɛ is the Random error term. 
