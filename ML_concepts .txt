@@ -1,0 +1,120 @@
+Machine Learning (ML) is a subset of Artificial Intelligence (AI) that empowers computers to acquire knowledge from data. ML systems are trained using algorithms, rather than being explicitly programmed. They excel at automatically detecting significant patterns within data and applying these patterns to make predictions on new, unseen data. The primary objective of ML is to optimize its performance on unseen data, with the overarching purpose of generalization.
+
+Types of ML:
+
+Supervised:
+
+Regression: Predicting a numerical result (Z) when the outcome is known.
+Classification: Categorizing data into distinct classes.
+Unsupervised:
+
+Clustering: Identifying patterns in data without labeled categories.
+Anomaly Detection: Discovering rare or unusual instances within a dataset.
+Dimensionality Reduction: Reducing the number of features or variables in data.
+Semi-Supervised: Combining elements of both supervised and unsupervised learning to leverage partially labeled data.
+
+Self-Supervised: Training a model using its existing data without external labeling.
+
+Reinforcement: A learning approach where agents make decisions to maximize cumulative rewards based on interactions with an environment.
+Model 
+A machine learning model is a function that relates input variables to parameters, which may include a level of certainty or confidence.
+
+Evaluation Metrics:
+
+We aim to assess how closely the predictions align with the actual values in the test dataset. This comparison is typically evaluated using the following metrics:
+
+For Quantitative Response (Regression):
+
+Mean Absolute Error (MAE)
+Mean Square Error (MSE)
+Root Mean Square Error (RMSE)
+Root Mean Square Logarithmic Error (RMSLE)
+R-squared (R²)
+Adjusted R-squared (Adjusted R²)
+For Qualitative Response (Classification):
+
+Confusion Matrix
+Accuracy
+Precision
+Recall
+F-score
+Area Under the Receiver Operating Characteristic Curve (AUC-ROC)
+Logarithmic Loss (Log Loss)
+Gini Coefficient
+The choice of these metrics depends on the nature of the problem being addressed.
+
+The ultimate goal is to develop a metric that quantifies the degree of error, specifically measuring the gap between predictions and reality.
+
+Bias-Variance Tradeoff: Balancing Model Complexity vs. Test Error
+
+Underfitting: High bias (low variance), failing to reach the target. This occurs when the trained algorithm struggles to generalize well to new data. Signs of underfitting include:
+
+The model fits the training data too tightly but struggles to make accurate predictions on new data.
+The model captures noise (error) in the training data, identifying patterns that do not actually exist.
+The algorithm merely memorizes the data instead of learning from it.
+The model is overly complex.
+Mitigating Overfitting:
+
+Collecting more data (can reduce both bias and variance).
+Reducing complexity through techniques like regularization and feature selection (aim to generate more informative features).
+Utilizing cross-validation to estimate performance and find the right balance between bias and variance.
+Achieving a Good Balance: On average, capturing the true relationship within the data.
+Overfitting: Excessively complex, resulting in very high variance
+
+Optimization vs. Generalization:
+
+An ideal model is one that can achieve a balance between optimization and generalization.
+
+Partitioning of the Dataset:
+
+Typically, the dataset is divided into three non-overlapping samples:
+
+Training Set: Used to train the model.
+Validation Set: Employed for model validation and fine-tuning.
+Test Set: Utilized to assess the model's ability to make accurate predictions on new, unseen data (generalization).
+For further clarity, consider referring to a diagram or visualization.
+
+To be considered valid and valuable, any supervised machine learning model MUST demonstrate the capacity to generalize effectively beyond the training data.
+
+While large datasets are often advantageous, what should we do when such extensive data is not available?
+
+
+Resampling Methods:
+
+In some cases, splitting the data into three sets is not feasible, as algorithms may struggle to learn from a small training dataset. A small validation set can also lead to difficulties in properly tuning hyperparameters, resulting in unstable model performance in the validation set. The solution is to combine the training and validation sets and use cross-validation.
+
+K-fold Cross Validation:
+
+Divide the training data into K roughly equal-sized, non-overlapping groups. Leave out the Kth fold and fit the model to the other K-1 folds. Finally, obtain predictions for the left-out Kth fold.
+This process is repeated for each part (K), and the results are combined.
+Why Use Cross-Validation:
+
+Model Architecture Selection (Optimization vs. Generalization): Cross-validation helps determine which model architecture is the right choice.
+Estimation of Model Performance on the Test Set (with caution): After selecting the best model architecture, we estimate the generalization error using the test set. Different models are compared based on their test set performance.
+
+
+
+The Learning Curve: Do We Need More Data?
+
+A learning curve is a graphical representation illustrating the relationship between the volume of training data and the performance of a machine learning model. It serves as a diagnostic tool to determine whether a model suffers from high bias, high variance, or is appropriately balanced.
+
+How Do Machines Learn?
+
+Machine learning is the process of teaching models to improve by optimizing and minimizing cost functions. These cost functions quantify the discrepancy between actual outcomes and model predictions.
+
+Terminology:
+
+Learning: The process of determining the model weights (parameter values).
+Cost Functions: Indicators of how well our model makes predictions for a given set of parameters.
+Each cost function has its unique curve and gradients. The slope of this curve guides us on how to adjust our parameters to enhance the model's accuracy.
+
+
+
+
+
+
+
+
+
+
+
