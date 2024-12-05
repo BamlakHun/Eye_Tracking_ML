@@ -24,7 +24,7 @@ Table of Contents
 
 
 # Machine Learning:
-- Recurrent Networks (RN) for predicting moves based on the game state.
-- K-Nearest Neighbors (KNN) for chess move recommendation and decision-making.
+- Linear Regression, SVM Regression for predicting moves based on the game state and for chess move recommendation and decision-making.
+# Programming Language
 - Pytest: For writing and running tests on the functionality of the game logic and machine learning models.
 - Python 3: Main programming language used for development.
